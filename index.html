@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Order Application</title>
     <style>
       * {
         box-sizing: border-box;
@@ -45,9 +46,10 @@
         margin-right: 10px;
       }
 
-      h3, p {
-    display: inline-block;
-  }
+      h3,
+      p {
+        display: inline-block;
+      }
 
       h4 {
         text-decoration: underline;
@@ -61,7 +63,6 @@
 
       .modified {
         color: #0e42cf;
-
       }
 
       button {
@@ -138,7 +139,7 @@
       }
     </style>
 
-    <title>Task Order App V2.01</title>
+    <title>Task Order App V3.0</title>
   </head>
   <body>
     <div class="flex-container">
@@ -154,8 +155,9 @@
           <label for="pfee">Preliminary Design Fee:</label>
 
           <input
-            type="number"
+            type="text"
             id="preli-fee1"
+            class="accounting"
             name="preli-fee1"
             placeholder="Enter amount"
             pattern="^\$\d{1,3}(,\d{3})*(\.\d+)?$"
@@ -168,8 +170,9 @@
           >
 
           <input
-            type="number"
+            type="text"
             id="pAllowance1"
+            class="accounting"
             name="pAllowance1"
             placeholder="Enter amount"
             value="0"
@@ -181,8 +184,9 @@
           >
 
           <input
-            type="number"
+            type="text"
             id="preli-reimburse1"
+            class="accounting"
             name="preli-reimburse1"
             placeholder="Enter amount"
             value="0"
@@ -191,8 +195,9 @@
           <label for="pArtwork1">Artwork for Preliminary design phase:</label>
 
           <input
-            type="number"
+            type="text"
             id="pArtwork1"
+            class="accounting"
             name="pArtwork1"
             placeholder="Enter amount"
             value="0"
@@ -203,8 +208,9 @@
           >
 
           <input
-            type="number"
+            type="text"
             id="pCSS1"
+            class="accounting"
             name="pCSS1"
             placeholder="Enter amount"
             value="0"
@@ -216,8 +222,9 @@
           <label for="ffee1">Final Design Fee:</label>
 
           <input
-            type="number"
+            type="text"
             id="final-fee1"
+            class="accounting"
             name="final-fee1"
             placeholder="Enter amount"
             value="0"
@@ -228,8 +235,9 @@
           >
 
           <input
-            type="number"
+            type="text"
             id="fAllowance1"
+            class="accounting"
             name="fAllowance1"
             placeholder="Enter amount"
             value="0"
@@ -241,8 +249,9 @@
           >
 
           <input
-            type="number"
+            type="text"
             id="final-reimburse1"
+            class="accounting"
             name="final-reimburse1"
             placeholder="Enter amount"
             value="0"
@@ -251,8 +260,9 @@
           <label for="fArtwork1">Artwork for Final design phase:</label>
 
           <input
-            type="number"
+            type="text"
             id="fArtwork1"
+            class="accounting"
             name="fArtwork1"
             placeholder="Enter amount"
             value="0"
@@ -263,8 +273,9 @@
           >
 
           <input
-            type="number"
+            type="text"
             id="fCSS1"
+            class="accounting"
             name="fCSS1"
             placeholder="Enter amount"
             value="0"
@@ -287,8 +298,9 @@
           <label for="pfee2">Preliminary Design Fee:</label>
 
           <input
-            type="number"
+            type="text"
             id="preli-fee2"
+            class="accounting"
             name="preli-fee2"
             placeholder="Enter amount"
             value="0"
@@ -299,8 +311,9 @@
           >
 
           <input
-            type="number"
+            type="text"
             id="pAllowance2"
+            class="accounting"
             name="pAllowance2"
             placeholder="Enter amount"
             value="0"
@@ -312,8 +325,9 @@
           >
 
           <input
-            type="number"
+            type="text"
             id="preli-reimburse2"
+            class="accounting"
             name="preli-reimburse2"
             placeholder="Enter amount"
             value="0"
@@ -322,8 +336,9 @@
           <label for="pArtwork2">Artwork for Preliminary design phase:</label>
 
           <input
-            type="number"
+            type="text"
             id="pArtwork2"
+            class="accounting"
             name="pArtwork2"
             placeholder="Enter amount"
             value="0"
@@ -334,8 +349,9 @@
           >
 
           <input
-            type="number"
+            type="text"
             id="pCSS2"
+            class="accounting"
             name="pCSS2"
             placeholder="Enter amount"
             value="0"
@@ -347,8 +363,9 @@
           <label for="ffee2">Final Design Fee:</label>
 
           <input
-            type="number"
+            type="text"
             id="final-fee2"
+            class="accounting"
             name="final-fee2"
             placeholder="Enter amount"
             value="0"
@@ -359,8 +376,9 @@
           >
 
           <input
-            type="number"
+            type="text"
             id="fAllowance2"
+            class="accounting"
             name="fAllowance2"
             placeholder="Enter amount"
             value="0"
@@ -372,8 +390,9 @@
           >
 
           <input
-            type="number"
+            type="text"
             id="final-reimburse2"
+            class="accounting"
             name="final-reimburse2"
             placeholder="Enter amount"
             value="0"
@@ -382,8 +401,9 @@
           <label for="fArtwork2">Artwork for Final design phase:</label>
 
           <input
-            type="number"
+            type="text"
             id="fArtwork2"
+            class="accounting"
             name="fArtwork2"
             placeholder="Enter amount"
             value="0"
@@ -394,8 +414,9 @@
           >
 
           <input
-            type="number"
+            type="text"
             id="fCSS2"
+            class="accounting"
             name="fCSS2"
             placeholder="Enter amount"
             value="0"
@@ -413,11 +434,6 @@
     <!-- /*****************************************************/ -->
 
     <script>
-      function myFunction() {
-        var x = document.getElementById("myText").value;
-        document.getElementById("demo").innerHTML = x;
-      }
-
       function $(id) {
         return document.getElementById(id);
       }
@@ -448,36 +464,91 @@
         return num.toFixed(2);
       }
 
+      function ifp(num, text) {
+        if (num) {
+          return text + f(num) + "<br>";
+        } else {
+          return "";
+        }
+      }
+
+      function ifDel(num) {
+        if (num) {
+          return f(num) + "+";
+        } else {
+          return "";
+        }
+      }
+
+      function ifp2(num1, num2, text) {
+        if (num1 || num2) {
+          return (
+            text +
+            f(num1) +
+            "+" +
+            f(num2) +
+            ") = " +
+            f(sum(num1, num2)) +
+            "<br>"
+          );
+        } else {
+          return "";
+        }
+      }
+
+      function ifDel2(num1, num2) {
+        if (num1 || num2) {
+          return f(sum(num1, num2)) + "+";
+        } else {
+          return "";
+        }
+      }
+
+      function ifDel2End(num1, num2) {
+        if (num1 || num2) {
+          return f(sum(num1, num2));
+        } else {
+          return "";
+        }
+      }
+
+      function toNum(ID) {
+        const valueInNumber = parseFloat(
+          document.getElementById(ID).value.replace(/[^0-9.-]/g, "")
+        );
+        return valueInNumber;
+      }
+
       $("btn").onclick = function () {
-        var n1 = parseFloat($("preli-fee1").value);
-        var n2 = parseFloat($("pAllowance1").value);
-        var n3 = parseFloat($("preli-reimburse1").value);
-        var n4 = parseFloat($("pArtwork1").value);
-        var n5 = parseFloat($("pCSS1").value);
+        var n1 = toNum("preli-fee1");
+        var n2 = toNum("pAllowance1");
+        var n3 = toNum("preli-reimburse1");
+        var n4 = toNum("pArtwork1");
+        var n5 = toNum("pCSS1");
 
-        var n6 = parseFloat($("final-fee1").value);
-        var n7 = parseFloat($("fAllowance1").value);
-        var n8 = parseFloat($("final-reimburse1").value);
-        var n9 = parseFloat($("fArtwork1").value);
-        var n10 = parseFloat($("fCSS1").value);
+        var n6 = toNum("final-fee1");
+        var n7 = toNum("fAllowance1");
+        var n8 = toNum("final-reimburse1");
+        var n9 = toNum("fArtwork1");
+        var n10 = toNum("fCSS1");
 
-        var n11 = parseFloat($("preli-fee2").value);
-        var n12 = parseFloat($("pAllowance2").value);
-        var n13 = parseFloat($("preli-reimburse2").value);
-        var n14 = parseFloat($("pArtwork2").value);
-        var n15 = parseFloat($("pCSS2").value);
+        var n11 = toNum("preli-fee2");
+        var n12 = toNum("pAllowance2");
+        var n13 = toNum("preli-reimburse2");
+        var n14 = toNum("pArtwork2");
+        var n15 = toNum("pCSS2");
 
-        var n16 = parseFloat($("final-fee2").value);
-        var n17 = parseFloat($("fAllowance2").value);
-        var n18 = parseFloat($("final-reimburse2").value);
-        var n19 = parseFloat($("fArtwork2").value);
-        var n20 = parseFloat($("fCSS2").value);
+        var n16 = toNum("final-fee2");
+        var n17 = toNum("fAllowance2");
+        var n18 = toNum("final-reimburse2");
+        var n19 = toNum("fArtwork2");
+        var n20 = toNum("fCSS2");
 
         var pest = $v("pEstimate");
         var mest = $v("mEstimate");
 
         $("displayArea1").innerHTML =
-          "<h2>FEE SCHEDULE</h2>"+
+          "<h2>FEE SCHEDULE</h2>" +
           "<h3><b><u>Previous Estimate: </u></b></h3>" +
           "<p>" +
           pest +
@@ -486,21 +557,13 @@
           "Preliminary Design Fee: " +
           f(n1) +
           "<br>" +
-          "Allowances for Additional Preliminary Design Services: " +
-          f(n2) +
-          "<br>" +
+          ifp(n2, "Allowances for Additional Preliminary Design Services: ") +
           "Sub-total of Preliminary Design Fee: " +
           f(sum(n1, n2)) +
           "<br><br>" +
-          "Reimbursable for Preliminary design phase: " +
-          f(n3) +
-          "<br>" +
-          "Artwork for Preliminary design phase: " +
-          f(n4) +
-          "<br>" +
-          "CSS for Preliminary design phase: " +
-          f(n5) +
-          "<br>" +
+          ifp(n3, "Reimbursable for Preliminary design phase: ") +
+          ifp(n4, "Artwork for Preliminary design phase: ") +
+          ifp(n5, "CSS for Preliminary design phase: ") +
           "Preliminary design phase not-to-exceed amount: " +
           f(sum(sum(n1, n2), n3, n4, n5)) +
           "<br><br>" +
@@ -508,21 +571,13 @@
           "Final Design Fee: " +
           f(n6) +
           "<br>" +
-          "Allowances for Additional Final Design Services: " +
-          f(n7) +
-          "<br>" +
+          ifp(n7, "Allowances for Additional Final Design Services: ") +
           "Sub-total of Final Design Fee: " +
           f(sum(n6, n7)) +
           "<br><br>" +
-          "Reimbursable for the Final design phase: " +
-          f(n8) +
-          "<br>" +
-          "Artwork for Final design phase: " +
-          f(n9) +
-          "<br>" +
-          "CSS for Final design phase: " +
-          f(n10) +
-          "<br>" +
+          ifp(n8, "Reimbursable for the Final design phase: ") +
+          ifp(n9, "Artwork for Final design phase: ") +
+          ifp(n10, "CSS for Final design phase: ") +
           "Final design phase not-to-exceed amount: " +
           f(sum(sum(n6, n7), n8, n9, n10)) +
           "<br>" +
@@ -539,56 +594,26 @@
           mest +
           "</p><br>" +
           "<i><u>Preliminary Design Phase</i></u> <br>" +
-          "Preliminary Design Fee: (" +
-          f(n1) +
-          " + " +
-          f(n11) +
-          ") = " +
-          f(sum(n1, n11)) +
-          "<br>" +
-          "Allowances for Additional Preliminary Design Services: (" +
-          f(n2) +
-          " + " +
-          f(n12) +
-          ") = " +
-          f(sum(n2, n12)) +
-          "<br>" +
+          ifp2(n1, n11, "Preliminary Design Fee: (") +
+          ifp2(
+            n2,
+            n12,
+            "Allowances for Additional Preliminary Design Services: ("
+          ) +
           "Sub-total of Preliminary Design Fee: (" +
-          f(sum(n1, n11)) +
-          " + " +
-          f(sum(n2, n12)) +
+          ifDel2(n1, n11) +
+          ifDel2End(n2, n12) +
           ") = " +
           f(sum(sum(n1, n11), sum(n2, n12))) +
           "<br><br>" +
-          "Reimbursable for Preliminary design phase: (" +
-          f(n3) +
-          " + " +
-          f(n13) +
-          ") = " +
-          f(sum(n3, n13)) +
-          "<br>" +
-          "Artwork for Preliminary design phase: (" +
-          f(n4) +
-          " + " +
-          f(n14) +
-          ") = " +
-          f(sum(n4, n14)) +
-          "<br>" +
-          "CSS for Preliminary design phase: (" +
-          f(n5) +
-          " + " +
-          f(n15) +
-          ") = " +
-          f(sum(n5, n15)) +
-          "<br>" +
+          ifp2(n3, n13, "Reimbursable for Preliminary design phase: (") +
+          ifp2(n4, n14, "Artwork for Preliminary design phase: (") +
+          ifp2(n5, n15, "CSS for Preliminary design phase: (") +
           "Preliminary design phase not-to-exceed amount: (" +
-          f(sum(sum(n1, n11), sum(n2, n12))) +
-          " + " +
-          f(sum(n3, n13)) +
-          " + " +
-          f(sum(n4, n14)) +
-          " + " +
-          f(sum(n5, n15)) +
+          ifDel2(n1 + n11, n2 + n12) +
+          ifDel2(n3, n13) +
+          ifDel2(n4, n14) +
+          ifDel2End(n5, n15) +
           ") = " +
           f(
             sum(
@@ -600,56 +625,26 @@
           ) +
           "<br><br>" +
           "<i><u>Final Design Phase</i></u> <br>" +
-          "Final Design Fee: (" +
-          f(n6) +
-          " + " +
-          f(n16) +
-          ") = " +
-          f(sum(n6, n16)) +
-          "<br>" +
-          "Allowances for Additional Preliminary Design Services: (" +
-          f(n7) +
-          " + " +
-          f(n17) +
-          ") = " +
-          f(sum(n7, n17)) +
-          "<br>" +
-          "Sub-total of Preliminary Design Fee: (" +
-          f(sum(n6, n16)) +
-          " + " +
-          f(sum(n7, n17)) +
+          ifp2(n6, n16, "Final Design Fee: (") +
+          ifp2(
+            n7,
+            n17,
+            "Allowances for Additional Preliminary & Final Design Services: ("
+          ) +
+          "Sub-total of Final Design Fee: (" +
+          ifDel2(n6, n16) +
+          ifDel2End(n7, n17) +
           ") = " +
           f(sum(sum(n6, n16), sum(n7, n17))) +
           "<br><br>" +
-          "Reimbursable for Preliminary design phase: (" +
-          f(n8) +
-          " + " +
-          f(n18) +
-          ") = " +
-          f(sum(n8, n18)) +
-          "<br>" +
-          "Artwork for Preliminary design phase: (" +
-          f(n9) +
-          " + " +
-          f(n19) +
-          ") = " +
-          f(sum(n9, n19)) +
-          "<br>" +
-          "CSS for Preliminary design phase: (" +
-          f(n10) +
-          " + " +
-          f(n20) +
-          ") = " +
-          f(sum(n10, n20)) +
-          "<br>" +
-          "Preliminary design phase not-to-exceed amount: (" +
-          f(sum(sum(n6, n16), sum(n7, n17))) +
-          " + " +
-          f(sum(n8, n18)) +
-          " + " +
-          f(sum(n9, n19)) +
-          " + " +
-          f(sum(n10, n20)) +
+          ifp2(n8, n18, "Reimbursable for Final design phase: (") +
+          ifp2(n9, n19, "Artwork for Final design phase: (") +
+          ifp2(n10, n20, "CSS for Final design phase: (") +
+          "Final design phase not-to-exceed amount: (" +
+          ifDel2(n6 + n16, n7 + n17) +
+          ifDel2(n8, n18) +
+          ifDel2(n9, n19) +
+          ifDel2End(n10, n20) +
           ") = " +
           f(
             sum(
@@ -696,11 +691,57 @@
             )
           );
       };
+      /******************************************************************/
+      // Format number into accounting style
+      function formatAccounting(value) {
+        const number = parseFloat(value);
+        if (isNaN(number)) return "";
+        const formatted = Math.abs(number).toLocaleString("en-US", {
+          style: "currency",
+          currency: "USD",
+          minimumFractionDigits: 2,
+        });
+        return number < 0 ? `(${formatted})` : formatted;
+      }
+
+      // Parse formatted accounting text to number
+      function parseAccounting(str) {
+        const cleaned = str.replace(/[\$,()]/g, "");
+        const number = parseFloat(cleaned);
+        return str.includes("(") ? -Math.abs(number) : number;
+      }
+
+      // Apply formatting to all accounting inputs
+      function formatAllInputs() {
+        document.querySelectorAll(".accounting").forEach((input) => {
+          const raw = parseAccounting(input.value);
+          input.value = formatAccounting(raw);
+        });
+      }
+
+      // On blur, format individual input
+      document.querySelectorAll(".accounting").forEach((input) => {
+        input.addEventListener("blur", () => {
+          const raw = parseAccounting(input.value);
+          input.value = formatAccounting(raw);
+        });
+
+        input.addEventListener("focus", () => {
+          // Show plain number while editing
+          const raw = parseAccounting(input.value);
+          input.value = raw || "";
+        });
+      });
+
+      // Initial formatting
+      formatAllInputs();
+
+      /************************************************************/
     </script>
 
     <footer>
       <hr />
-      <!-- <p> This application was developed by: Md Hoque.</p> -->
+      <!-- <p> This Task Order application was developed by: Md Hoque.</p> -->
     </footer>
   </body>
 </html>
