@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Styles_TO_STO.css">
+    <title>Supplemental Task Order</title>
+</head>
+<body>
+    <nav>
+      <a href="index.html" style="margin-right: 300px"
+        >HOME: Task Order Review Application</a
+      >
+      <a href="TO.html" style="margin-right: 100px">Initial Task Order</a>
+      <a href="STO.html">Supplemental Task Order</a>
+    </nav>
+
+      <div class="grid-container">
+
+
+        <div class="row1">
+<div class="col1"> 
+    <div class="flex-container">
+        <div id="app">
+          <!-- <h2 class="heading2"><b>STO Review Application</b></h2> -->
+  
+          <div class="TO_ID">
+            <h3 class="heading3">Previous Fee Schedule:</h3>
+            <input type="text" class="text-field" id="pEstimate" value="01A" />
+          </div>
+  
+          <h4 class="previous">Preliminary Design Phase</h4>
+  
+          <form id="myForm">
+<div class="align">
+              <label for="pfee">Preliminary Design Fee:</label>
+   
+            <input
+              type="text"
+              id="preli-fee1"
+
+              name="preli-fee1"
+              value="0"
+              data-type="currency"
+              placeholder="Enter amount"
+              pattern="^\$\d{1,3}(,\d{3})*(\.\d+)?$"
+            />
+</div>
+  
+<!-- <div class="align">
+              <label for="pAllowance1"
+              >Allowance for additional Preliminary Design services fee:</label
+            >
+  
+            <input
+              type="text"
+              id="pAllowance1"
+
+              name="pAllowance1"
+              value="0"
+            />
+</div> -->
+  
+            <!-- /*******************************************************/ -->
+            <div class="align">
+              <label for="pre-reimburse1"
+              >Reimbursables for Preliminary design phase:</label
+            >
+  
+            <input
+              type="text"
+              id="preli-reimburse1"
+
+              name="preli-reimburse1"
+              value="0"
+            />
+            </div>
+  
+           <div class="align">
+             <label for="pArtwork1">Artwork for Preliminary design phase:</label>
+  
+            <input
+              type="text"
+              id="pArtwork1"
+
+              name="pArtwork1"
+              value="0"
+            />
+           </div>
+  
+<!-- <div class="align">
+              <label for="pCSS1"
+              >Construction support services for Preliminary design phase:</label
+            >
+            <input
+              type="text"
+              id="pCSS1"
+
+              name="pCSS1"
+              value="0"
+            />
+</div> -->
+  
+            <!-- /***************** Previous Fee Schedule: Final Design Phase ***************/ -->
+  
+            <h4 class="previous">Final Design Phase</h4>
+<div class="align">
+              <label for="ffee1">Final Design Fee:</label>
+  
+            <input
+              type="text"
+              id="final-fee1"
+
+              name="final-fee1"
+              value="0"
+            />
+</div>
+  
+<div class="align">
+              <label for="fAllowance1"
+              >Allowance for additional Final Design services fee:</label
+            >
+  
+            <input
+              type="text"
+              id="fAllowance1"
+
+              name="fAllowance1"
+              value="0"
+            />
+</div>
+  
+            <!-- /*******************************************************/ -->
+<div class="align">
+              <label for="final-reimburse1"
+              >Reimbursables for Final design phase:</label
+            >
+  
+            <input
+              type="text"
+              id="final-reimburse1"
+
+              name="final-reimburse1"
+              value="0"
+            />
+</div>
+  
+<div class="align">
+              <label for="fCSS1"
+              >Construction support services for Final design phase:</label
+            >
+  
+            <input
+              type="text"
+              id="fCSS1"
+
+              name="fCSS1"
+              value="0"
+            />
+</div>
+  
+            <!-- /***************** Modified Fee Schedule: ***************/ -->
+                         <div class="TO_ID">
+              <h3 class="heading3">Modified Fee Schedule:</h3>
+
+                            <input
+                type="text"
+                class="text-field"
+                id="mEstimate"
+                value="01AS01"
+              />
+            </div>
+  
+            <h4 class="modified">Preliminary Design Phase</h4>
+
+
+  <div class="align">
+            <label for="pfee2">Preliminary Design Fee:</label>
+  
+            <input
+              type="text"
+              id="preli-fee2"
+
+              name="preli-fee2"
+              value="0"
+            />
+  </div>
+  <div class="align">
+            <label for="pre-reimburse2"
+              >Reimbursables for Preliminary design phase:</label
+            >
+  
+            <input
+              type="text"
+              id="preli-reimburse2"
+
+              name="preli-reimburse2"
+              value="0"
+            />
+  </div>
+              <!-- /*******************************************************/ -->
+  <div class="align">
+            <label for="pArtwork2">Artwork for Preliminary design phase:</label>
+  
+            <input
+              type="text"
+              id="pArtwork2"
+
+              name="pArtwork2"
+              value="0"
+            />
+  </div>
+
+  
+            <!-- /***************** Modified Fee Schedule: Final Design Phase ***************/ -->
+  
+            <h4 class="modified">Final Design Phase</h4>
+  <div class="align">
+            <label for="ffee2">Final Design Fee:</label>
+  
+            <input
+              type="text"
+              id="final-fee2"
+
+              name="final-fee2"
+              value="0"
+            />
+  </div>
+  <div class="align">
+            <label for="fAllowance2"
+              >Allowance for additional Final Design services fee:</label
+            >
+  
+            <input
+              type="text"
+              id="fAllowance2"
+
+              name="fAllowance2"
+              value="0"
+            />
+  </div>
+              <!-- /*******************************************************/ -->
+  <div class="align">
+            <label for="final-reimburse2"
+              >Reimbursables for Final design phase:</label
+            >
+  
+            <input
+              type="text"
+              id="final-reimburse2"
+
+              name="final-reimburse2"
+              value="0"
+            />
+  </div>
+
+  <div class="align">
+            <label for="fCSS2"
+              >Construction support services for Final design phase:</label
+            >
+            <input
+              type="text"
+              id="fCSS2"
+              name="fCSS2"
+              value="0"
+            />
+  </div> 
+  
+            <button type="button" id="btn">Submit</button>
+          </form>
+          <br />
+        </div>
+      </div>
+</div>
+<div class="col2" id="displayArea1"> <b><u>FEE SCHEDULE:</u></b></div>
+</div> <!-- End of row1-->
+
+          <footer>&copy; This app is designed and developed by Md E. Hoque</footer>
+      <script src="./util1.js"></script>
+      <script src="./Scripts_STO.js"></script>
+      <script src="./formatAccounting.js"></script>
+
+
+</body>
+</html>
